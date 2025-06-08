@@ -40,36 +40,38 @@
                 <p>compila il form per richiedere un preventivo per i nostri servizi di sviluppo.</p>
               </div>
               <div class="col-12">
-                <label for="validationDefault01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationDefault01" value="" required>
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" name="nome" id="nome" value="" required>
               </div>
               <div class="col-12">
-                <label for="validationDefault02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationDefault02" value="" required>
+                <label for="cognome" class="form-label">Cognome</label>
+                <input type="text" class="form-control" name="cognome" id="cognome" value="" required>
               </div>
               <div class="col-12">
-                <label for="validationDefault02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationDefault02" value="" required>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" value="" required>
               </div>
               <div class="col-12">
-                <label for="validationDefault04" class="form-label">State</label>
-                <select class="form-select" id="validationDefault04" required>
-                  <option selected disabled value="">Choose...</option>
-                  <option>...</option>
+                <label for="lavoro" class="form-label">Tipo di lavoro</label>
+                <select class="form-select" name="lavoro" id="lavoro" required>
+                  <option selected disabled value="">Seleziona il tipo di lavoro</option>
+                  <option  value="Backed Development">Backed Development</option>
+                  <option value="Frontend Development">Frontend Development</option>
+                  <option value="Project Analysis">Project Analysis</option>
                 </select>
               </div>
               <div class="col-12">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <label for="Textarea1" class="form-label">Textarea con Bootstrap 5</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
               <div class="col-12">
-                <label for="validationDefault02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationDefault02" value="" required>
+                <label for="codicepromozionale" class="form-label">Codice Promozionale (opzionale)</label>
+                <input type="text" class="form-control" name="codicepromozionale" id="codicepromozionale" value="" required>
               </div>
               <div class="col-12">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                  <label class="form-check-label" for="invalidCheck2">
+                  <input class="form-check-input" type="checkbox" value="" id="checkb1" required>
+                  <label class="form-check-label" for="checkb1">
                     Accetto la Privacy Policy
                   </label> 
                 </div>
@@ -77,13 +79,11 @@
               <div class="col-12">
                 <div class="container">
                   <div class="row  text-center">
-                    <!-- Colonna pulsante -->
                     <div class="col-12 col-md-6 mb-3 mb-md-5 mt-md-4 ">
-                      <button class="btn btn-primary p-2" type="submit">Calcola preventivo</button>
+                      <button class="btn btn-primary" type="submit">Calcola preventivo</button>
                     </div>
-                    <!-- Colonna testo -->
                     <div class="col-12 col-md-6 mt-md-3 mb-3">
-                      <strong class="fs-5 ">Prezzo finale</strong>
+                      <strong class="fs-6 ">Prezzo finale</strong>
                       <p class="fs-5">200,00 euro</p>
                     </div>
                   </div>
