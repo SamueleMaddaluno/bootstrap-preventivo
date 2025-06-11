@@ -34,7 +34,7 @@
       <div class="container mt-4">
         <div class="row">
           <div class="col-md-8">
-            <form class="row g-3">
+            <form id="form-preventivo" class="row g-3">
               <div class="col-12">
                 <h1 class="fs-2">Richiesta Preventivo</h1>
                 <p>compila il form per richiedere un preventivo per i nostri servizi di sviluppo.</p>
@@ -55,9 +55,9 @@
                 <label for="lavoro" class="form-label">Tipo di lavoro</label>
                 <select class="form-select" name="lavoro" id="lavoro" required>
                   <option selected disabled value="">Seleziona il tipo di lavoro</option>
-                  <option  value="Backed Development">Backed Development</option>
-                  <option value="Frontend Development">Frontend Development</option>
-                  <option value="Project Analysis">Project Analysis</option>
+                  <option  value="1">Backed Development</option>
+                  <option value="2">Frontend Development</option>
+                  <option value="3">Project Analysis</option>
                 </select>
               </div>
               <div class="col-12">
@@ -66,7 +66,7 @@
               </div>
               <div class="col-12">
                 <label for="codicepromozionale" class="form-label">Codice Promozionale (opzionale)</label>
-                <input type="text" class="form-control" name="codicepromozionale" id="codicepromozionale" value="" required>
+                <input type="text" class="form-control" name="codicepromozionale" id="codicepromozionale" value="" >
               </div>
               <div class="col-12">
                 <div class="form-check">
