@@ -1,8 +1,6 @@
 const formElement = document.getElementById('form-preventivo')
-console.log(formElement)
 const selezioneLavoro = formElement.querySelector('#lavoro')
 const inputCodice = formElement.querySelector('#codicepromozionale')
-console.log(selezioneLavoro, inputCodice)
 
 const codiciPromozionaliValidi = ['YHDNU32', 'JANJC63', 'PWKCN25', 'SJDPO96', 'POCIE24']
 
@@ -13,7 +11,7 @@ formElement.addEventListener('submit' , function(event){
 
     const codicePromozionale = inputCodice.value
 
-    console.log(lavoro, codicePromozionale)
+
 
     const ore = 10
 
@@ -36,15 +34,21 @@ formElement.addEventListener('submit' , function(event){
 
     const prezzo = ore * prezzoOrario
     
-    let sconto
+    let sconto = 0
 
     if(codiciPromozionaliValidi.includes(codicePromozionale)){
         sconto = (prezzo * 25) / 100
     }
-    else {
-        sconto = 0 
+    else if (codicePromozionale !== ''){
         alert ('CODICE PROMOZIONALE NON VALIDO, IL PREZZO VIENE CALCOLATO SENZA SCONTO')
-    }
 
-    const prezzoFinale = (prezzo - sconto).toFixed + '&euro'
+    }
+    
+    const prezzoFinale = (prezzo - sconto).toFixed(2) + '€'
+
+
+
+    const prezzoOutput = formElement.querySelector('.prezzo')
+
+    prezzoOutput.innerHTML = prezzoFinale
 })
